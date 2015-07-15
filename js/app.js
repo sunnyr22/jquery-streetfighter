@@ -8,12 +8,12 @@ $(document).ready(function() {
 		$(".ryu-still").show();
 	})
 	.mousedown(function() {
-		$(".ryu-ready").hide();
-		$(".ryu-throwing").show();
-		$(".hadouken").show();
-		//hadouken sound
-		//show hadouken and animate it right
-	})
+    // play hadouken sound
+    $('.ryu-ready').hide();
+    $('.ryu-throwing').show();
+    $('.hadouken').show();
+    // animate hadouken to the right of the screen
+  })
 	.mouseup(function() {
 		console.log("mouseup");
 		//ryu goes bakc to ready position
