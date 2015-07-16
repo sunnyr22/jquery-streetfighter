@@ -26,6 +26,22 @@ $(document).ready(function() {
 	});
 });
 
+$(document).keydown(function(event){
+		if (event.which === 88) {
+			$(".ryu-ready").hide();
+			$(".ryu-still").hide();
+			$(".ryu-throwing").hide();
+			$(".ryu-cool").show();
+	  }
+	})
+.keyup(function(event){
+		if (event.which === 88) {
+			$(".ryu-cool").hide();
+			$(".ryu-ready").show();	
+		}
+	});
+
+
 function playHadouken() {
 	$("#hadouken-sound")[0].volume = 0.5;
 	$("#hadouken-sound")[0].load();
