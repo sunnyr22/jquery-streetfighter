@@ -2,7 +2,7 @@ $(document).ready(function() {
 	$(".ryu").mouseenter(function() {
 		$(".ryu-still").hide();
 		$(".ryu-ready").show();
-		
+
 	})
 	.mouseleave(function() {
 		$(".ryu-ready").hide();
@@ -15,7 +15,8 @@ $(document).ready(function() {
     // animate hadouken to the right of the screen
   })
 	.mouseup(function() {
-		console.log("mouseup");
+		$(".ryu-throwing").hide();
+		$(".ryu-ready").show();
 		//ryu goes bakc to ready position
 	})
 });
