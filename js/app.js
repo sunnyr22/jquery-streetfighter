@@ -37,6 +37,8 @@ $(document).keydown(function(event){
 .keyup(function(event){
 		if (event.which === 88) {
 			$(".ryu-cool").hide();
+			$("ryu-throwing").hide();
+			$("ryu-still").hide();
 			$(".ryu-ready").show();	
 		}
 	});
